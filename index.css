@@ -1,0 +1,12 @@
+.top_row {
+    height: 200px;
+}
+
+.top_row .link {
+    float: right; 
+}
+
+.top_center {
+    padding-left: 40%;
+    padding-right: 40%;
+}

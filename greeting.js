@@ -24,7 +24,7 @@ function getUserName2(event){
     console.log(event); // todo
     event.preventDefault();
     
-    localStorage.setItem(USER_NAME, input.value);
+    // localStorage.setItem(USER_NAME, input.value);
 }
 
 function greeting(){

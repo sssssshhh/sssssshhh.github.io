@@ -1,7 +1,8 @@
 const getClassClock = document.querySelector('.clock');
 
 function setStyle(){
-    getClassClock.style.color = "pink";
+    getClassClock.style.color = "pink",
+    getClassClock.style.fontSize = "100px";
 }
 
 function getDate(){
