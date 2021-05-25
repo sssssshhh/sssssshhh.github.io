@@ -1,4 +1,5 @@
-# movieRevPro_Web	1. EMOJI
+# my_momentum
+	1. emoji
 	https://www.w3schools.com/charsets/ref_emoji.asp
 	
 	2. weather api
@@ -35,3 +36,6 @@
 	
 	5.24
 	* search구현! link 클릭 -> form 표시 -> 키워드에 따라 구글결과로 이동
+	
+	5.25
+	* search input css 수정
