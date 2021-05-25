@@ -1,5 +1,5 @@
 const todoForm = document.querySelector('.todo_form'),
-      todoInput = todoForm.querySelector('input'),
+      todoValue = todoForm.querySelector('input'),
       todoList = document.querySelector('.js-todoList'),
       TODOS_LS = 'todos';
 
@@ -44,20 +44,18 @@ function showTodo(value){
 
 function createTodo(event){
     event.preventDefault();
-    showTodo(todoInput.value);
-    todoInput.value = "";
+    showTodo(todoValue.value);
+    todoValue.value = "";
 }
 
 function todo(){
     const loadTodos = localStorage.getItem(TODOS_LS);
     todoForm.addEventListener("submit", createTodo);
-    
     todoForm.classList.add("showing");
-    // if(loadTodos == null){
-    //     todoForm.classList.add("showing");
-    // } else {
-    //     todoForm.classList.remove("showing");
-    // }
+
+    todoValue.style.background = 'none';
+    todoValue.style.border = 'none';
+    todoValue.style.borderBottom = '2px solid pink';
 }
 
 todo();

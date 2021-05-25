@@ -2,6 +2,10 @@
     height: 200px;
 }
 
+.top_row .links {
+    float: left;
+}
+
 .top_row .weather {
     float: right; 
 }
