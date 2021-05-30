@@ -39,3 +39,6 @@
 	
 	5.25
 	* search input css 수정
+	
+	5.30
+	* weather api 수정(url 오류), response를 table에 담아 화면 
