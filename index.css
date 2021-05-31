@@ -1,18 +1,28 @@
-.top_row {
-    height: 200px;
-}
-
-.top_row .links {
-    float: left;
-}
-
-.top_row .weather {
-    float: right; 
-}
-
 .top_center {
     padding-left: 40%;
     padding-right: 40%;
+}
+
+/*form control */
+form {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImeges {
+    z-index: -1;
+    animation: fadeIn .5s linear;
 }
 
 /*input control */

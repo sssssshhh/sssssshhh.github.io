@@ -1,5 +1,5 @@
-const getClassWeather = document.querySelector(".weather");
-const myApikey = "2ee8c98d98db389890d31fcec832db22";
+const getClassWeather = document.querySelector(".weather"),
+      myApikey = "2ee8c98d98db389890d31fcec832db22";
 
 function getMyLatandLogSuccess(position){
     getWeathers(position.coords.latitude, position.coords.longitude);
