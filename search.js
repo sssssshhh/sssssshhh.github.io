@@ -12,6 +12,10 @@ function design(){
     searchValue.style.background = 'none';
     searchValue.style.border = 'none';
     searchValue.style.borderBottom = '2px solid pink';
+
+    searchValue.style.backgroundImage = 'url(images/assets/search.png)';
+    searchValue.style.backgroundRepeat = 'no-repeat';
+    searchValue.style.backgroundSize = '15px';
 }
 
 
