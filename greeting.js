@@ -2,21 +2,21 @@ const userName = document.querySelector('.name_form'),
       grettingValue = userName.querySelector('input'),
       h3 = document.querySelector('.top_center').querySelector('h3');
 
-const USER_NAME = "name";
+const USER_NAME = 'name';
 
 function checkLocalStorage(){
     if(!localStorage.getItem(USER_NAME)){
-        userName.classList.add("showing");
+        userName.classList.add('showing');
         stopSubmit();
     } else {
-        userName.classList.remove("showing");
+        userName.classList.remove('showing');
         h3.innerText = `Hi, ${localStorage.getItem(USER_NAME)}`;
-        h3.style.color = "pink";
+        h3.style.color = 'pink';
     }
 }
 
 function stopSubmit(){
-    userName.addEventListener("submit", getUserName);
+    userName.addEventListener('submit', getUserName);
 }
 
 function getUserName(event){

@@ -42,3 +42,10 @@
 	
 	5.30
 	* weather api 수정(url 오류), response를 table에 담아 화면 
+
+    6.2
+	* 이미지를 INPUT에 넣기
+
+	6.5
+	* bgImage 글씨 잘 보이도록 변경
+	* search 엔터시 검색결과로 이동하지 않는 에러 수정. submit을 가리키는 태그명 지정 오류.

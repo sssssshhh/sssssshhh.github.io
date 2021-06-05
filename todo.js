@@ -23,7 +23,7 @@ function showTodo(value){
     const li = document.createElement('li');
     const delBtn = document.createElement('button');
     delBtn.addEventListener('click', delTodos);
-    delBtn.innerHTML = "😿";
+    delBtn.innerHTML = '😿';
     
     const span = document.createElement('span');
     span.innerText = value;
@@ -50,8 +50,8 @@ function createTodo(event){
 
 function todo(){
     const loadTodos = localStorage.getItem(TODOS_LS);
-    todoForm.addEventListener("submit", createTodo);
-    todoForm.classList.add("showing");
+    todoForm.addEventListener('submit', createTodo);
+    todoForm.classList.add('showing');
 
     todoValue.style.background = 'none';
     todoValue.style.border = 'none';

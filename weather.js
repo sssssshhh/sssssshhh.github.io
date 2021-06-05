@@ -1,12 +1,12 @@
-const getClassWeather = document.querySelector(".weather"),
-      myApikey = "2ee8c98d98db389890d31fcec832db22";
+const getClassWeather = document.querySelector('.weather'),
+      myApikey = '2ee8c98d98db389890d31fcec832db22';
 
 function getMyLatandLogSuccess(position){
     getWeathers(position.coords.latitude, position.coords.longitude);
 }
 
 function getMyLatandLogFailure(position){
-    console.log("get My latitude and longitude falure");
+    console.log('get My latitude and longitude falure');
 }
 
  function getMyLatandLog(){
@@ -21,10 +21,11 @@ function getWeathers(lat, lon){
 
 function showWeathers(dailyWeather){
     const table = document.createElement('table');
-    table.style.color = "pink";
-    table.style.backgroundColor = "#ffffff";
-    table.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-    table.style.borderRadius = "30px";
+    table.style.color = '#ba03fc';
+    table.style.backgroundColor = '#ffffff';
+    table.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    table.style.borderRadius = '30px';
+    table.style.padding = '20px';
 
 
     for(daily of dailyWeather){
@@ -51,11 +52,6 @@ function showWeathers(dailyWeather){
         const minTemp = Math.floor(daily.temp.min);
         td_cel.innerText = `${maxTemp}/${minTemp}℃`;
         tr.appendChild(td_cel);
-
-        // set weather comment
-        const td_comment = document.createElement('td');
-        td_comment.innerText = daily.weather[0].description;
-        tr.appendChild(td_comment);
     }
     getClassWeather.appendChild(table);
 }

@@ -12,11 +12,11 @@ function setStyleBgImeges(){
 
         let bgImeges = document.querySelector('.bgImeges');
 
-        bgImeges.style.position = "absolute";
+        bgImeges.style.position = 'absolute';
         bgImeges.style.top = 0;
         bgImeges.style.left = 0;
-        bgImeges.style.width = "100%";
-        bgImeges.style.height = "100%";
+        bgImeges.style.width = '100%';
+        bgImeges.style.height = '100%';
     }
 }
 

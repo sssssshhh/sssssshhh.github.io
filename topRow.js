@@ -4,6 +4,7 @@ const topRowDiv = document.querySelector('.top_row'),
       searchInput = document.querySelector('#search-input');
 
 function topRow(){
+    topRowDiv.style.width = '100%';
     topRowDiv.style.height = '200px';
     LinksDiv.style.float = 'left';
     weatherDiv.style.float = 'right';

@@ -6,7 +6,6 @@ const divLink = document.querySelector('.links'),
 function design(){
     divTopRowH3.forEach(h3 => {
         h3.style.color = 'pink';
-        h3.style.cursor = 'pointer';
     });
 
     searchValue.style.background = 'none';
@@ -16,18 +15,19 @@ function design(){
     searchValue.style.backgroundImage = 'url(images/assets/search.png)';
     searchValue.style.backgroundRepeat = 'no-repeat';
     searchValue.style.backgroundSize = '15px';
+    
+    searchValue.style.paddingLeft = '20px';
+
+    searchValue.style.cursor = 'pointer';
 }
 
 
 function search(){
     design();
 
-    divLink.addEventListener('click', () => {
-        searchForm.classList.add('showing');
-        searchForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            location.replace(`https://www.google.com/search?q=${searchValue.value}`);
-        })
+    searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        location.replace(`https://www.google.com/search?q=${searchValue.value}`);
     });
 }
 
